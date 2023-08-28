@@ -75,6 +75,12 @@ This section describes in some detail how changes can be made and proposed with 
    Repeat the steps 3-4 as many times as necessary.
    Advance to the next step if all the commits (viewable with `git log`) make sense together.
 
+   When the pull request should add you as [new maintainer](https://github.com/NixOS/nixpkgs/blob/master/maintainers/README.md) keep this as a distinct commit and preferably order the commits like this:
+   ```
+   maintainers: add <new-maintainer>
+   <package-name>: <commit message>
+   ```
+
 5. Push your commits to your fork of Nixpkgs.
    ```
    git push --set-upstream origin HEAD
